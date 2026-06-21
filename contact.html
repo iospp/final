@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們 | Apex Bounce 頂級實戰籃球裝備</title>
+    <meta name="description" content="聯絡 Apex Bounce。不論您有任何球鞋選購問題、團體服裝採購、商品售後退換服務，都歡迎透過線上聯絡表單、電話或親臨實體門市與我們聯繫。">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Sticky Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <a href="index.html" style="display:flex; align-items:center; gap:0.5rem;">
+                <img src="images/apex-bounce-logo.png" alt="Apex Bounce 品牌標誌" title="Apex Bounce - 專業實戰籃球鞋與裝備首選" class="brand-logo">
+                <span class="brand-name">Apex Bounce</span>
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">首頁</a></li>
+            <li><a href="about.html">公司簡介</a></li>
+            
+            <!-- 精品籃球鞋的下拉式選單 -->
+            <li class="dropdown">
+                <a href="premium-shoes.html" class="dropdown-trigger">精品籃球鞋 <span style="font-size: 0.7rem;">▼</span></a>
+                <ul class="dropdown-menu">
+                    <li><a href="premium-shoes.html">精品籃球鞋 (原始方案)</a></li>
+                    <li><a href="premium-shoes.html">精品籃球鞋 (熱門關鍵字)</a></li>
+                </ul>
+            </li>
+            
+            <li><a href="budget-shoes.html">平價籃球鞋</a></li>
+            <li><a href="basketballs.html">籃球</a></li>
+            <li><a href="accessories.html">其他配件</a></li>
+            <li><a href="others.html">其它類</a></li>
+            <li><a href="contact.html">聯絡我們</a></li>
+        </ul>
+        <div class="nav-actions">
+            <div class="cart-icon-container cart-trigger">
+                <span style="font-size: 1.4rem;">🛒</span>
+                <span class="cart-badge" style="display: none;">0</span>
+            </div>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <!-- Page Banner -->
+    <section class="page-banner">
+        <h1>聯絡我們</h1>
+        <p>有任何球裝問題或業務合作？隨時給我們發送訊息！</p>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="section">
+        <div class="contact-grid">
+            
+            <!-- Contact details info -->
+            <div class="contact-info-cards">
+                <div class="contact-info-card">
+                    <div class="contact-icon">📍</div>
+                    <div class="contact-details">
+                        <h4>大安旗艦門市</h4>
+                        <p>台北市大安區新生南路三段 88 號</p>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 5px;">台大體育館旁，步行約 3 分鐘</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-details">
+                        <h4>客服專線</h4>
+                        <p>(02) 2366-8899</p>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 5px;">服務時間: 週一至週日 11:00 - 22:00</p>
+                    </div>
+                </div>
+                
+                <div class="contact-info-card">
+                    <div class="contact-icon">✉</div>
+                    <div class="contact-details">
+                        <h4>電子郵件</h4>
+                        <p>support@apexbounce.com</p>
+                        <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 5px;">合作信箱: business@apexbounce.com</p>
+                    </div>
+                </div>
+
+                <!-- Google Map Placeholder -->
+                <div style="background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: var(--border-radius-md); height: 200px; overflow: hidden; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 1.5rem;">
+                    <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">🗺️</div>
+                    <h5 style="margin-bottom: 0.25rem;">新生南路實體旗艦門市</h5>
+                    <p style="font-size: 0.8rem; color: var(--text-secondary);">台北市大安區新生南路三段 88 號 (地圖位置載入中)</p>
+                </div>
+            </div>
+            
+            <!-- Contact form container -->
+            <div class="contact-form-container">
+                <h3>線上留言表單</h3>
+                <form id="contact-us-form">
+                    <div class="form-group">
+                        <label for="contact-name" class="form-label">您的姓名</label>
+                        <input type="text" id="contact-name" class="form-control" placeholder="請輸入姓名" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-email" class="form-label">電子信箱</label>
+                        <input type="email" id="contact-email" class="form-control" placeholder="example@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="contact-message" class="form-label">留言內容</label>
+                        <textarea id="contact-message" class="form-control" placeholder="請填寫您想要詢問的問題或合作事宜，我們將儘速回覆。" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1rem; padding: 1rem 0;">送出訊息</button>
+                </form>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Shopping Cart Overlay Drawer -->
+    <div class="cart-overlay">
+        <div class="cart-sidebar">
+            <div class="cart-header">
+                <h3>購物車</h3>
+                <button class="btn-close-cart">✕</button>
+            </div>
+            <div class="cart-items">
+                <!-- Loaded dynamically by JS -->
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total-row">
+                    <span>總計:</span>
+                    <span class="cart-total-price">NT$ 0</span>
+                </div>
+                <button class="btn btn-primary cart-checkout-btn">前往結帳</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>Apex Bounce</h3>
+                <p>全台最專業的頂級實戰籃球裝備店，精選優質籃球鞋與實戰配件，用黑科技裝備伴你制霸球場。</p>
+                <div class="social-links">
+                    <a href="#" class="social-link">FB</a>
+                    <a href="#" class="social-link">IG</a>
+                    <a href="#" class="social-link">YT</a>
+                </div>
+            </div>
+            <div class="footer-links-col">
+                <h4>快速連結</h4>
+                <ul>
+                    <li><a href="index.html">首頁</a></li>
+                    <li><a href="about.html">公司簡介</a></li>
+                    <li><a href="contact.html">聯絡我們</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>商品分類</h4>
+                <ul>
+                    <li><a href="premium-shoes.html">精品籃球鞋</a></li>
+                    <li><a href="budget-shoes.html">評價籃球鞋</a></li>
+                    <li><a href="basketballs.html">運動籃球</a></li>
+                </ul>
+            </div>
+            <div class="footer-links-col">
+                <h4>營業資訊</h4>
+                <p style="color:var(--text-secondary); font-size:0.9rem; margin-bottom:0.5rem;">週一至週日 11:00 - 22:00</p>
+                <p style="color:var(--text-secondary); font-size:0.9rem;">台北市大安區新生南路三段 88 號</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Apex Bounce Sports Inc. All Rights Reserved. 期末專案設計</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

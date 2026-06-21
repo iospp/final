@@ -1,0 +1,11 @@
+{
+  "name": "apex-bounce",
+  "version": "1.0.0",
+  "description": "Apex Bounce Basketball Shoes E-Commerce Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Apex Bounce Team",
+  "license": "ISC"
+}
